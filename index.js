@@ -2,6 +2,6 @@ function justInvoke(arg){
   return arg();}
 
 function setThisWithCall(fn, thisValue, arg){
-  return fn().bind(thisValue)
+  return fn(arg).bind(thisValue)
 }  
   
